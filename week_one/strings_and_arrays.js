@@ -15,7 +15,7 @@ function removeDups(arr){
     return newArr;
 }
 
-console.log(removeDups([1,2,2,3,5,5,8,8,8,9]));
+// console.log(removeDups([1,2,2,3,5,5,8,8,8,9]));
 
 // var string = "Hello my name is Amanda"
 // console.log(string.split(""))
@@ -38,5 +38,15 @@ function removeSpaces(string){
     return newStr
 }
 
-console.log(removeSpaces(" Pl ayTha tF u nkyM usi c "));
+// console.log(removeSpaces(" Pl ayTha tF u nkyM usi c "));
 
+function revArray(arr){
+    var temp = 0;
+    for(var i = arr.length-1; i >= arr.length/2; i--){
+        temp = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
+    }
+    return arr
+}
+// console.log(revArray([4,5,7,3,68,3,-4]))
