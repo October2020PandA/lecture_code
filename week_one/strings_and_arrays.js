@@ -50,3 +50,18 @@ function revArray(arr){
     return arr
 }
 // console.log(revArray([4,5,7,3,68,3,-4]))
+
+function filterRange(arr, min, max) {
+	for(let i = 0; i < arr.length; i++) {
+		if(arr[i] <= min || arr[i] >= max) {
+			for(let j = i; j < arr.length - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+            arr.length = arr.length - 1;
+			i--;
+		}
+    }
+    return arr;
+}
+
+console.log(filterRange([1,2,3,4,5],1,5))

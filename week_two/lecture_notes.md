@@ -26,5 +26,4 @@
     - Node class
     - Linked List class
     - add to front
-    - remove from front
     - traversal (display list)
